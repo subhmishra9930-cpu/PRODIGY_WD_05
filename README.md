@@ -13,9 +13,6 @@ https://subhmishra9930-cpu.github.io/PRODIGY_WD_05/
 - Beautiful UI with glassmorphism effects
 - Detailed weather information including temperature, humidity, wind speed, and more
 
-## API Used
-
-- [OpenWeatherMap Current Weather API](https://openweathermap.org/current)
 
 # Author
 Subh Kumar Mishra — Web Development Intern @Prodigy InfoTech<br>
