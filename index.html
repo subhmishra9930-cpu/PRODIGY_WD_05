@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-cloud-sun"></i> Weather App</h1>
+            <p>Get current weather conditions for any location</p>
+        </div>
+        
+        <div class="search-container">
+            <form id="weather-form">
+                <input type="text" id="city-input" placeholder="Enter city name..." autocomplete="off">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+            <div class="popular-cities">
+                <p>Popular cities:</p>
+                <div class="city-tags">
+                    <span class="city-tag" data-city="New York">New York</span>
+                    <span class="city-tag" data-city="London">London</span>
+                    <span class="city-tag" data-city="Tokyo">Tokyo</span>
+                    <span class="city-tag" data-city="Sydney">Sydney</span>
+                    <span class="city-tag" data-city="Paris">Paris</span>
+                    <span class="city-tag" data-city="Dubai">Dubai</span>
+                    <span class="city-tag" data-city="Singapore">Singapore</span>
+                    <span class="city-tag" data-city="Los Angeles">Los Angeles</span>
+                    <span class="city-tag" data-city="Berlin">Berlin</span>
+                    <span class="city-tag" data-city="Toronto">Toronto</span>
+                </div>
+            </div>
+            <button id="location-btn" class="location-btn">
+                <i class="fas fa-location-arrow"></i> Use My Location
+            </button>
+        </div>
+        
+        <div class="weather-container">
+            <div class="weather-card">
+                <div class="weather-header">
+                    <div class="city-info">
+                        <h2 id="city-name">City Name</h2>
+                        <p id="date-time">Date and Time</p>
+                    </div>
+                    <div class="weather-icon">
+                        <i id="weather-icon" class="fas fa-sun"></i>
+                    </div>
+                </div>
+                
+                <div class="weather-main">
+                    <div class="temperature">
+                        <span id="temp-value">--</span>
+                        <span class="temp-unit">°C</span>
+                    </div>
+                    <div class="weather-description">
+                        <p id="weather-desc">Weather Description</p>
+                    </div>
+                </div>
+                
+                <div class="weather-details">
+                    <div class="detail-item">
+                        <i class="fas fa-wind"></i>
+                        <div>
+                            <p class="detail-label">Wind Speed</p>
+                            <p id="wind-speed">-- km/h</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <i class="fas fa-tint"></i>
+                        <div>
+                            <p class="detail-label">Humidity</p>
+                            <p id="humidity">--%</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <i class="fas fa-compress-alt"></i>
+                        <div>
+                            <p class="detail-label">Pressure</p>
+                            <p id="pressure">-- hPa</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <i class="fas fa-eye"></i>
+                        <div>
+                            <p class="detail-label">Visibility</p>
+                            <p id="visibility">-- km</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="loading" id="loading">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>Loading weather data...</p>
+            </div>
+            
+            <div class="error-message" id="error-message">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p id="error-text">Error message will appear here</p>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p>Made by SM | Task 05 Of WD</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
